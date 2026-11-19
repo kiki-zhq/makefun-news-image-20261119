@@ -5,128 +5,115 @@
 <title>The World in One Day — 19 November 2026</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  html, body { width: 1024px; height: 1024px; }
-  body {
-    background: #faf8f2;
-    color: #141414;
-    font-family: Georgia, 'Times New Roman', 'DejaVu Serif', serif;
+  body { background: #e8e2d4; font-family: Georgia, 'Times New Roman', serif; color: #16130e; }
+  .sheet {
+    width: 1024px; height: 1024px; margin: 0 auto; background: #faf6ec;
+    padding: 30px 38px 24px; overflow: hidden;
   }
-  .page { width: 1024px; height: 1024px; padding: 28px 40px 24px 40px; }
-  .masthead {
-    text-align: center;
-    font-size: 58px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    line-height: 1.05;
-  }
-  .masthead .red { color: #9e1520; }
-  .dateline {
-    text-align: center;
-    font-size: 24px;
-    letter-spacing: 1px;
-    margin-top: 8px;
-    color: #232323;
-  }
-  .dateline b { color: #9e1520; }
-  .rule-thick { border-top: 4px solid #141414; margin: 12px 0 0 0; }
-  .rule-thin { border-top: 1px solid #141414; margin: 3px 0 0 0; }
-  .lead { padding: 15px 0 12px 0; }
   .kicker {
-    font-family: 'DejaVu Sans', Arial, sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    color: #9e1520;
+    display: flex; justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif; font-size: 12px; letter-spacing: 2px;
+    text-transform: uppercase; color: #6b6252;
+    border-bottom: 1px solid #16130e; padding-bottom: 6px;
+  }
+  .mast { text-align: center; padding: 14px 0 10px; border-bottom: 4px double #16130e; }
+  .mast h1 {
+    font-size: 68px; line-height: 1; letter-spacing: 1px; font-weight: 900;
     text-transform: uppercase;
   }
-  .lead h1 {
-    font-size: 48px;
-    line-height: 1.07;
-    font-weight: 700;
-    margin-top: 6px;
+  .mast .dateline {
+    font-family: Arial, Helvetica, sans-serif; font-size: 15px; letter-spacing: 3px;
+    text-transform: uppercase; margin-top: 8px; color: #8c1d1d;
   }
-  .lead p { font-size: 22px; line-height: 1.3; margin-top: 8px; color: #232323; }
-  .rule-mid { border-top: 1px solid #141414; margin: 4px 0 0 0; }
-  .grid { display: flex; gap: 32px; padding-top: 14px; }
-  .col { flex: 1 1 0; }
-  .story { margin-bottom: 17px; }
-  .story .kicker { font-size: 15px; letter-spacing: 2px; }
-  .story h2 { font-size: 28px; line-height: 1.12; font-weight: 700; margin-top: 4px; }
-  .story p { font-size: 19px; line-height: 1.28; margin-top: 5px; color: #232323; }
-  .story .divider { border-top: 1px solid #999999; margin-top: 13px; }
-  .footer { margin-top: 4px; }
-  .brief { font-size: 18px; line-height: 1.35; color: #232323; }
-  .brief b { color: #9e1520; letter-spacing: 1px; }
-  .credit {
-    text-align: center;
-    font-size: 15px;
-    letter-spacing: 1px;
-    color: #555555;
-    margin-top: 12px;
+  .lead { padding: 16px 0 14px; border-bottom: 2px solid #16130e; }
+  .lead .tag {
+    display: inline-block; background: #8c1d1d; color: #faf6ec;
+    font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold;
+    letter-spacing: 2px; padding: 3px 8px; text-transform: uppercase; margin-bottom: 8px;
+  }
+  .lead h2 { font-size: 44px; line-height: 1.08; font-weight: 900; }
+  .lead p { font-size: 18.5px; line-height: 1.5; margin-top: 9px; }
+  .grid {
+    display: grid; grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 2px solid #16130e;
+  }
+  .cell { padding: 17px 15px 14px; border-right: 1px solid #b9b09a; }
+  .cell:nth-child(3n) { border-right: none; }
+  .cell:nth-child(-n+3) { border-bottom: 1px solid #b9b09a; }
+  .cell .eyebrow {
+    font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold;
+    letter-spacing: 2px; text-transform: uppercase; color: #8c1d1d; margin-bottom: 5px;
+  }
+  .cell h3 { font-size: 22px; line-height: 1.15; font-weight: 800; }
+  .cell p { font-size: 15px; line-height: 1.45; margin-top: 6px; }
+  .brief { padding: 13px 0 10px; border-bottom: 1px solid #16130e; }
+  .brief .briefhead {
+    font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold;
+    letter-spacing: 3px; text-transform: uppercase; color: #8c1d1d; margin-bottom: 6px;
+  }
+  .brief p { font-size: 16px; line-height: 1.55; }
+  .brief b { font-weight: 800; }
+  .foot {
+    display: flex; justify-content: space-between; padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif; font-size: 11.5px; letter-spacing: 1px;
+    text-transform: uppercase; color: #6b6252;
   }
 </style>
 </head>
 <body>
-<div class="page">
-  <div class="masthead">THE WORLD <span class="red">IN ONE DAY</span></div>
-  <div class="dateline"><b>Thursday, 19 November 2026</b> &nbsp;&middot;&nbsp; World News &nbsp;&middot;&nbsp; One Day, One Page</div>
-  <div class="rule-thick"></div>
-  <div class="rule-thin"></div>
+<div class="sheet">
+  <div class="kicker"><span>One day &middot; One page</span><span>Vol. I &mdash; No. 19</span><span>Price: the news itself</span></div>
+
+  <div class="mast">
+    <h1>The World in One Day</h1>
+    <div class="dateline">Thursday, 19 November 2026</div>
+  </div>
 
   <div class="lead">
-    <div class="kicker">Summit in China</div>
-    <h1>Trump, Xi and Putin Meet in China as Leaders Gather</h1>
-    <p>Trump arrives in Shenzhen for a regional summit and is hugged by Xi on the tarmac; a first trilateral meeting of the three leaders is expected on Thursday.</p>
+    <span class="tag">Top story &middot; China</span>
+    <h2>Three Leaders Gather in China as Trump Lands in Shenzhen</h2>
+    <p>Donald Trump touched down in Shenzhen for a regional summit, where Xi Jinping met him on the tarmac with an embrace. A first three-way meeting of Trump, Xi and Vladimir Putin is expected on Thursday, putting the three leaders in one room at a tense moment for the world.</p>
   </div>
-  <div class="rule-mid"></div>
 
   <div class="grid">
-    <div class="col">
-      <div class="story">
-        <div class="kicker">Ukraine War</div>
-        <h2>Crimean Bridge Attacked Again</h2>
-        <p>Russian officials report another attack on the bridge linking Russia to Crimea, a day after part of the span collapsed.</p>
-        <div class="divider"></div>
-      </div>
-      <div class="story">
-        <div class="kicker">Art Market</div>
-        <h2>Van Gogh Sells for Record $190.4m After Nazi-History Row</h2>
-        <p>The painting fetches a record price at auction despite a dispute over its history during the Nazi era.</p>
-        <div class="divider"></div>
-      </div>
-      <div class="story">
-        <div class="kicker">Business &middot; Technology</div>
-        <h2>Anthropic Raises $81.3bn in Biggest IPO Ever</h2>
-        <p>The maker of Claude is set for a stock market debut valued at more than $1.4 trillion.</p>
-      </div>
+    <div class="cell">
+      <div class="eyebrow">Ukraine &middot; Crimea</div>
+      <h3>Bridge to Crimea Hit Again</h3>
+      <p>Russian officials say the crossing to Crimea has come under attack once more, a day after part of the span gave way.</p>
     </div>
-    <div class="col">
-      <div class="story">
-        <div class="kicker">International Justice</div>
-        <h2>Myanmar Faces Historic ICJ Genocide Verdict</h2>
-        <p>The U.N. court rules on the Rohingya massacres in a landmark case against Myanmar.</p>
-        <div class="divider"></div>
-      </div>
-      <div class="story">
-        <div class="kicker">Middle East</div>
-        <h2>Israeli Ground Operation in Gaza Crosses Ceasefire Line</h2>
-        <p>Israeli tanks advance in a rare ground operation beyond the Yellow Line in Gaza.</p>
-        <div class="divider"></div>
-      </div>
-      <div class="story">
-        <div class="kicker">Culture &middot; Games</div>
-        <h2>GTA VI Begins Global Rollout</h2>
-        <p>Gamers return to Vice City after a 13-year wait as Grand Theft Auto VI launches worldwide.</p>
-      </div>
+    <div class="cell">
+      <div class="eyebrow">Art &middot; Auction</div>
+      <h3>Van Gogh Sells for a Record $190.4m</h3>
+      <p>A Van Gogh canvas fetched the highest price ever at auction, even as a dispute over its past in the Nazi era hung over the sale.</p>
+    </div>
+    <div class="cell">
+      <div class="eyebrow">Markets &middot; Tech</div>
+      <h3>Anthropic Raises $81.3bn in Biggest IPO Ever</h3>
+      <p>The company behind Claude raised the largest sum in IPO history and is headed for a stock-market debut valued above $1.4 trillion.</p>
+    </div>
+    <div class="cell">
+      <div class="eyebrow">The Hague &middot; Justice</div>
+      <h3>World Court Rules on Myanmar Genocide Case</h3>
+      <p>The UN&rsquo;s highest court delivers its landmark verdict on the massacres of the Rohingya, a case watched around the globe.</p>
+    </div>
+    <div class="cell">
+      <div class="eyebrow">Middle East &middot; Gaza</div>
+      <h3>Israeli Tanks Push Past Gaza Ceasefire Line</h3>
+      <p>Israeli forces opened a rare ground operation beyond the Yellow Line, with tanks advancing across the line agreed in the ceasefire.</p>
+    </div>
+    <div class="cell">
+      <div class="eyebrow">Games &middot; Launch</div>
+      <h3>GTA VI Opens Its Doors Worldwide</h3>
+      <p>Grand Theft Auto VI began its global rollout, sending players back to Vice City after a wait of thirteen years.</p>
     </div>
   </div>
 
-  <div class="footer">
-    <div class="rule-thick"></div>
-    <div class="rule-thin"></div>
-    <p class="brief" style="margin-top:10px;"><b>IN BRIEF</b> &mdash; NASA&rsquo;s Voyager 1 reaches a light-day milestone, 50 years after launch &middot; Cyclone Akvan bears down on India&rsquo;s Andhra coast &middot; Hakeem Jeffries set to be first African-American House Speaker &middot; EU proposes &euro;45bn Ukraine loan</p>
-    <div class="credit">Compiled from wire reports &nbsp;&middot;&nbsp; Thursday, 19 November 2026</div>
+  <div class="brief">
+    <div class="briefhead">In brief</div>
+    <p><b>Voyager 1</b> has travelled a full light-day from Earth, fifty years after it left the launch pad. <b>Cyclone Akvan</b> is gathering strength over the Bay of Bengal, with landfall on India&rsquo;s Andhra coast expected on 20 November. <b>Hakeem Jeffries</b> is poised to become the first African-American Speaker of the US House. The <b>European Union</b> has put forward a &euro;45 billion loan for Ukraine, to be repaid once Russia pays reparations.</p>
   </div>
+
+  <div class="foot"><span>Thursday 19 November 2026</span><span>The World in One Day</span><span>Seven stories &middot; one page</span></div>
 </div>
 </body>
 </html>

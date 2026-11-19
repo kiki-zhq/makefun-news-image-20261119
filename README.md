@@ -4,23 +4,23 @@
 [![rank](https://make.fun/badge/news-image-20261119/kiki-zhq/makefun-news-image-20261119/rank.svg)](https://make.fun/bounty/news-image-20261119/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
 [![reward](https://make.fun/badge/news-image-20261119/kiki-zhq/makefun-news-image-20261119/reward.svg)](https://make.fun/bounty/news-image-20261119?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
 
-"The World in One Day" — a newspaper front page summing up Thursday 19 November 2026 in one image. Entry for make.fun `news-image-20261119`.
+"The World in One Day" — one newspaper page holding Thursday 19 November 2026. Entry for make.fun `news-image-20261119`.
 
-`entry.png` is a 1024×1024 newspaper front page with the date line and seven real stories from 19 November 2026:
+`entry.png` is a 1024×1024 front page, dated 19 November 2026, carrying seven stories from that day:
 
-- **Lead — Trump, Xi and Putin meet in China.** Trump arrives in Shenzhen for a regional summit and is hugged by Xi on the tarmac; a first trilateral meeting of the three leaders is expected on Thursday.
-- **Crimean Bridge attacked again.** Russian officials report another attack on the bridge linking Russia to Crimea, a day after part of the span collapsed.
-- **Van Gogh sells for a record $190.4m after a Nazi-history row.** The painting fetches a record price at auction despite a dispute over its history during the Nazi era.
-- **Anthropic raises $81.3bn in the biggest IPO ever.** The maker of Claude is set for a stock market debut valued at more than $1.4 trillion.
-- **Myanmar faces a historic ICJ genocide verdict.** The U.N. court rules on the Rohingya massacres in a landmark case against Myanmar.
-- **Israeli ground operation in Gaza crosses the ceasefire line.** Israeli tanks advance in a rare ground operation beyond the Yellow Line in Gaza.
-- **GTA VI begins its global rollout.** Gamers return to Vice City after a 13-year wait as Grand Theft Auto VI launches worldwide.
+- **Top story — Three leaders gather in China.** Donald Trump lands in Shenzhen for a regional summit, greeted on the tarmac by Xi Jinping; a first three-way meeting with Vladimir Putin is expected on Thursday.
+- **Bridge to Crimea hit again.** Russian officials report another attack on the crossing, a day after part of the span gave way.
+- **Van Gogh sells for a record $190.4m.** The canvas fetches the highest auction price ever, despite a dispute over its Nazi-era past.
+- **Anthropic raises $81.3bn in the biggest IPO ever.** The maker of Claude heads for a stock-market debut valued above $1.4 trillion.
+- **World Court rules on the Myanmar genocide case.** The UN's highest court delivers its landmark verdict on the massacres of the Rohingya.
+- **Israeli tanks push past the Gaza ceasefire line.** A rare ground operation advances beyond the Yellow Line.
+- **GTA VI opens its doors worldwide.** Players return to Vice City after a thirteen-year wait.
 
-Plus an "IN BRIEF" line: NASA's Voyager 1 reaches a light-day milestone 50 years after launch, Cyclone Akvan bears down on India's Andhra coast, Hakeem Jeffries is set to be the first African-American House Speaker, and the EU proposes a €45bn Ukraine loan.
+An "In brief" strip adds four more items from the day: Voyager 1 reaching a light-day from Earth fifty years after launch, Cyclone Akvan gathering over the Bay of Bengal, Hakeem Jeffries poised to become the first African-American Speaker of the US House, and the EU's proposed €45 billion loan for Ukraine.
 
-Every headline was checked against news reported on 19 November 2026 (NYT, BBC, Al Jazeera, Times of India, NDTV, APSDMA). The page was built as a single HTML file (`frontpage.html`) and rendered to PNG with headless Chromium at exactly 1024×1024.
+The page was drawn as a single HTML file (`frontpage.html`) and rendered to PNG with headless Chromium at exactly 1024×1024.
 
-`main.py` (Python 3.13, standard library only) copies the repository-held `entry.png` to `/output/entry.png`. No network. Run it twice and both runs write the same bytes.
+`main.py` (Python 3.13, standard library only) reads the repository-held `entry.png` and writes its bytes to `/output/entry.png`. No network. Run it twice and both runs write the same bytes.
 
 ## Run it
 
